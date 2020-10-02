@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hogwarts</title>
+        <link rel="stylesheet" type="text/css" href="css/Student_exam.css">
+    </head>
+    <body>
+        <div id="header">
+        <center>
+                <div style="position: relative;" >
+            <img class="Main" src="img/Main.jpg">
+                <div style="left: 50%; margin-left: -200px; bottom: 200px; font-size:100; 
+                font-weight:bold; color:white; position: absolute;">
+                Hogwarts
+                <br>
+                _
+                <br>
+            </div>
+                <br>
+            <div style="left: 50%; margin-left: -200px; bottom: 85px; font-size:25; 
+                color:white; position: absolute;">
+                    Hogwarts, Hogwarts, Hoggy Warty, Hogwarts,<br>
+    Teach us something please,
+            </div>
+        </center>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="2_School.html">School</a>
+                    <ul>
+                        <li><a href="2_School_Place.html">Place</a></li>
+                        <li><a href="2_School_Subject.html">Subject</a></li>
+                        <li><a href="2_School_Professor.html">Professor</a></li>
+                    </ul>
+                </li>
+                    <li><a>Student</a>
+                    <ul>
+                        <li><a href="3_Student_Sorting_Hat.html">Sorting Hat</a></li>
+                        <li><a href="3_Student_exam.html">Exam</a></li>
+                    </ul>
+                </li>
+                    <li><a>Home</a>
+                    <ul>
+                        <li><a href="4_Home_Gryffindor.html">Gryffindor</a></li>
+                        <li><a href="4_Home_Slytherin.html">Slytherin</a></li>
+                        <li><a href="4_Home_Ravenclaw.html">Ravenclaw</a></li>
+                        <li><a href="4_Home_Hufflepuff.html">Hufflepuff</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 여기까지가 헤더 -->
+        <br><br><br><br>
+        <center>
+        <div class="subTitle">What is 'O.W.L.'?</div><br>
+        <p><div class="subcontent">O.W.L.은 호그와트 5학년 학생들이 치르는 표준 마법사 시험입니다.<br>
+            5월 중순경 실시되며 마법사들의 향후 진로를 결정하는 중요한 시험입니다.<br>
+            시험은 필기와 실기로 구성되고 2주동안 연속적으로 실시됩니다.<br>
+            다음은 O.W.L.지필 기출예상문제입니다. 신중히 풀어보세요<span id="dots">...</span><br><br>
+                <span id="Start">  
+                <br><br>
+                <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">Magic(마법)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                <p><div class="question">(1) 다음 중 잠겨있는 문이나 자물쇠 등을 여는 주문은?</div></p>
+                <form name="form">
+                    <input type="radio" name="magicQ" value="v1">아씨오<br>
+                    <input type="radio" name="magicQ" value="v2">알로호모라<br>
+                    <input type="radio" name="magicQ" value="v3">인센디오<br>
+                    <input type="radio" name="magicQ" value="v4">윙가르디움 레비오우사<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question()">
+                   </form>
+                   <p id="check"></p>
+
+                   <p><div class="question">(2) 다음 중 보가트를 퇴치하는 주문은 무엇인가요?</div></p>
+                   <form name="form2">
+                    <input type="radio" name="magicQ2" value="v1">익스펙토 패트로눔<br>
+                    <input type="radio" name="magicQ2" value="v2">리디큘러스<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question2()">
+                    </form>
+                    <p id="check2"></p>
+
+                   <p><div class="question">(3) 다음 중 장난마법(Jinx)에 속하는 주문이 아닌 것은 무엇인가요?</div></p>
+                   <form name="form3">
+                    <input type="radio" name="magicQ3" value="v1">섹튬셈프라<br>
+                    <input type="radio" name="magicQ3" value="v2">슬러귤러스 이럭토<br>
+                    <input type="radio" name="magicQ3" value="v3">테르지오<br>
+                    <input type="radio" name="magicQ3" value="v4">릭투셈프라<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question3()">
+                    </form>
+                    <p id="check3"></p><br><br>
+
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">Transfiguration(변신술)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <p><div class="question">(1) 원소 변환술에 대한 갬프의 법칙에는 몇가지 예외 원칙이 있나요?</div></p>
+                    <form name="form4">
+                        <input type="radio" name="magicQ4" value="v1">3가지<br>
+                        <input type="radio" name="magicQ4" value="v2">5가지<br>
+                        <input type="radio" name="magicQ4" value="v3">8가지<br>
+                        <input type="radio" name="magicQ4" value="v4">11가지<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question4()">
+                       </form>
+                       <p id="check4"></p>
+
+                       <p><div class="question">(2) 다음 중 레파리파지 주문의 효과는 무엇인가요?</div></p>
+                    <form name="form5">
+                        <input type="radio" name="magicQ5" value="v1">변신한 사람과 물체의 실체를 보여주기<br>
+                        <input type="radio" name="magicQ5" value="v2">동물을 물잔으로 바꾸기<br>
+                        <input type="radio" name="magicQ5" value="v3">지팡이 끝에서 뱀 소환하기<br>
+                        <input type="radio" name="magicQ5" value="v4">변신술의 효과를 되돌리기<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question5()">
+                       </form>
+                       <p id="check5"></p>
+
+                       <p><div class="question">(3) 동물로 변신할 수 있는 마법사를 일컫는 말을 고르시오.</div></p>
+                    <form name="form6">
+                        <input type="radio" name="magicQ6" value="v1">호크룩스<br>
+                        <input type="radio" name="magicQ6" value="v2">먼던구스<br>
+                        <input type="radio" name="magicQ6" value="v3">애니마구스<br>
+                        <input type="radio" name="magicQ6" value="v4">메타모프구스<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question6()">
+                       </form>
+                       <p id="check6"></p><br><br>
+
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">Defence Against the Dark Art(어둠의 마법 방어술)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <p><div class="question">(1) 늑대인간의 특징으로 옳지 않은 것을 고르시오.</div></p>
+                    <form name="form7">
+                        <input type="radio" name="magicQ7" value="v1">1637년 [늑대인간 행동 규칙]이 만들어졌다.<br>
+                        <input type="radio" name="magicQ7" value="v2">울프스베인 마법약을 마시면 늑대인간이 되었을때 이성을 유지할 수 있다.<br>
+                        <input type="radio" name="magicQ7" value="v3">은으로 만든 탄환으로 늑대인간을 죽일 수 있다는 신화는 사실이다.<br>
+                        <input type="radio" name="magicQ7" value="v4">늑대인간이 일반인과 결혼할 시, 늑대인간의 성질은 자녀에게 이어지지 않는다.<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question7()">
+                       </form>
+                       <p id="check7"></p>
+
+                       <p><div class="question">(2) 레덕토 저주의 효과는 무엇인가요?</div></p>
+                    <form name="form8">
+                        <input type="radio" name="magicQ8" value="v1">단단한 물체를 산산조각낸다.<br>
+                        <input type="radio" name="magicQ8" value="v2">빠르게 다가오는 상대를 느리게 만든다.<br>
+                        <input type="radio" name="magicQ8" value="v3">뱀을 없앤다.<br>
+                        <input type="radio" name="magicQ8" value="v4">상대방에게 침묵저주를 건다.<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question8()">
+                       </form>
+                       <p id="check8"></p>
+
+                    <p><div class="question">(3) 용서받지 못할 저주가 아닌 것을 고르시오.</div></p>
+                    <form name="form9">
+                        <input type="radio" name="magicQ9" value="v1">임페리오<br>
+                        <input type="radio" name="magicQ9" value="v2">아바다 케다브라<br>
+                        <input type="radio" name="magicQ9" value="v3">스투페파이<br>
+                        <input type="radio" name="magicQ9" value="v4">크루시오<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question9()">
+                        </form>
+                        <p id="check9"></p><br><br>
+                        
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">Potions(마법약)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <p><div class="question">(1) 위석의 특징으로 옳은 것을 고르시오.</div></p>
+                    <form name="form10">
+                        <input type="radio" name="magicQ10" value="v1">대부분 독을 만드는데 사용된다.<br>
+                        <input type="radio" name="magicQ10" value="v2">위석으로 아모텐시아를 만들 수 있다.<br>
+                        <input type="radio" name="magicQ10" value="v3">정제된 뒤 사용해야 한다.<br>
+                        <input type="radio" name="magicQ10" value="v4">염소의 위에서 꺼낸 돌이다.<br>
+                        <input class="ap" type="button" name="선택" value="정답확인" onclick="Question10()">
+                       </form>
+                       <p id="check10"></p>
+
+                    <p><div class="question">(2) 마력 강화제의 재료로 알맞지 않은 것을 고르시오.</div></p>
+                <form name="form11">
+                    <input type="radio" name="magicQ11" value="v1">살라맨더의 피<br>
+                    <input type="radio" name="magicQ11" value="v2">재채기풀<br>
+                    <input type="radio" name="magicQ11" value="v3">당귀<br>
+                    <input type="radio" name="magicQ11" value="v4">생강뿌리<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question11()">
+                    </form>
+                    <p id="check11"></p>
+
+                <p><div class="question">(3) 아모텐시아를 만드는 과정 중에 알맞지 않은 것을 찾으시오.</div></p>
+                <form name="form12">
+                    <input type="radio" name="magicQ12" value="v1">양귀비 꽃즙을 넣고 시계방향으로 2번, 시계반대방향으로 3번씩 젓는다.<br>
+                    <input type="radio" name="magicQ12" value="v2">차갑게 식힌 애쉬와인더의 알의 1/2 조각을 빻아서 넣고 시계방향으로 7번 젓는다.<br>
+                    <input type="radio" name="magicQ12" value="v3">푸른색이 되면 자신의 머리카락과 겨우살이열매를 넣고 3분을 기다린다.<br>
+                    <input type="radio" name="magicQ12" value="v4">색깔이 완전히 진주빛으로 되었을 때 '스킬리드'라고 주문을 외우며 지팡이를 휘두르면 완성.<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question12()">
+                    </form>
+                    <p id="check12"></p><br><br>
+
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">History of Magic(마법의 역사)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                <p><div class="question">(1) 14세기 마녀사냥 때, 웬델린이라는 아주 기이한 마법사가 마녀사냥꾼들에게 잡힌 횟수는?</div></p>
+                <form name="form13">
+                    <input type="radio" name="magicQ13" value="v1">47번<br>
+                    <input type="radio" name="magicQ13" value="v2">12번<br>
+                    <input type="radio" name="magicQ13" value="v3">46번<br>
+                    <input type="radio" name="magicQ13" value="v4">11번<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question13()">
+                    </form>
+                    <p id="check13"></p>
+
+                    <p><div class="question">(2) 국제 비밀 법령이 제정된 주요 이유는 무엇입니까?</div></p>
+                <form name="form14">
+                    <input type="radio" name="magicQ14" value="v1">머글사이에서 일어나는 무의미한 마녀사냥을 끝내기 위해.<br>
+                    <input type="radio" name="magicQ14" value="v2">전 세계에세 마법사의 존재를 숨기고 머글로부터 마법사 공동체를 보호하기 위해.<br>
+                    <input type="radio" name="magicQ14" value="v3">1612년 대대적으로 일어난 도깨비 반란을 머글에게 들키지 않기 위해.<br>
+                    <input type="radio" name="magicQ14" value="v4">머글정부와 마법사협회의 교류를 위해.<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question14()">
+                    </form>
+                    <p id="check14"></p>
+
+                    <p><div class="question">(3) 볼드모트와 그의 세력, '죽음을 먹는 자들'에 대항하던 알버스 덤블도어가 사망한 1997년, 교장이 된 인물은 누구입니까?</div></p>
+                <form name="form15">
+                    <input type="radio" name="magicQ15" value="v1">미네르바 맥고나걸<br>
+                    <input type="radio" name="magicQ15" value="v2">돌로레스 엄브릿지<br>
+                    <input type="radio" name="magicQ15" value="v3">빅터 크라우처<br>
+                    <input type="radio" name="magicQ15" value="v4">세베루스 스네이프<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question15()">
+                    </form>
+                    <p id="check15"></p><br><br>
+
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <div class="subject">Herbology(약초학)</div><br>
+                    <hr size=2 width=15% color=white align="center" noshade><br>
+                    <p><div class="question">(1) 비명소리를 들으면 목숨을 잃을 수 있는 식물은 무엇인가요?</div></p>
+                <form name="form16">
+                    <input type="radio" name="magicQ16" value="v1">스너글러프<br>
+                    <input type="radio" name="magicQ16" value="v2">플리터블룸<br>
+                    <input type="radio" name="magicQ16" value="v3">맨드레이크<br>
+                    <input type="radio" name="magicQ16" value="v4">벨라도나<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question16()">
+                    </form>
+                    <p id="check16"></p>
+                    <p><div class="question">(2) 독특한 쐐기풀 잎을 덮고 있는 것은 무엇인가요?</div></p>
+                <form name="form17">
+                    <input type="radio" name="magicQ17" value="v1">쐐기꽃<br>
+                    <input type="radio" name="magicQ17" value="v2">쐐기털<br>
+                    <input type="radio" name="magicQ17" value="v3">쐐기뿌리<br>
+                    <input type="radio" name="magicQ17" value="v4">악취수액<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question17()">
+                    </form>
+                    <p id="check17"></p>
+                    <p><div class="question">(3) '악마의 덫'의 특징으로 바르지 않은 것을 고르시오.</div></p>
+                <form name="form18">
+                    <input type="radio" name="magicQ18" value="v1">물리치려면 강한 빛이나 불꽃이 필요하다.<br>
+                    <input type="radio" name="magicQ18" value="v2">움직이며 소음을 낼 수 있는 '반 지각' 마법 식물이다.<br>
+                    <input type="radio" name="magicQ18" value="v3">암살에 이용되기도 했다.<br>
+                    <input type="radio" name="magicQ18" value="v4">가만히 있으면 시체로 인식해 놓아준다.<br>
+                    <input class="ap" type="button" name="선택" value="정답확인" onclick="Question18()">
+                    </form>
+                    <p id="check18"></p><br><br>
+                    수고하셨습니다. 각자 채점 후 등급을 매겨보세요.<br>
+                    《등금》<br>
+                        O : Outstanding(특출함)<br>
+                        E : Exceeds Expectations(기대 이상)<br>
+                        A : Acceptable(무난함)<br><br>
+
+                        P : Poor(형편없음)<br>
+                        D : Dreadful(끔직함)<br>
+                        T : Troll(트롤 수준)<br>
+                </div>
+                </span></p>
+            <button class="secondbtn" onclick="myFunction()" id="startbutton">Start</button>
+            <br><br><br><br><br><br><div class="subTitle">What is 'N.E.W.T.'?</div><br>
+            <p><div class="subcontent">N.E.W.T.은 졸업학년인 7학년 학생들이 O.W.L.의 상위 레벨 시험입니다.<br>
+                실제 직업에서 활용되는 능력, 즉, 마법을 직접적으로 테스트 한다는 점에서 O.W.L.보다 더욱 중요한 시험입니다.<br>
+                N.E.W.T.에서 최소한 5과목 이상 E(Exceed Expectation, 기대 이상)을 받아야 합니다.<br>
+                직업에 따라 요구하는 N.E.W.T.의 등급이 다르며 그 범위도 방대하므로 자세한 것은 기숙사 사감교수님께 문의하십시오.</div><br><br>
+        </center>
+        <br><br>
+           <script type="text/javascript" src="js/Student_exam.js"></script>
+        </body>
+</html>

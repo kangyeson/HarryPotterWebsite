@@ -1,0 +1,146 @@
+img.Main{
+    object-fit: cover;
+    width: 1520;
+    height: 350;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: relative;
+}
+
+
+body{
+    overflow:auto; 
+    background: #3a5039;
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+
+nav{
+    margin: auto;
+    text-align: center;
+}
+nav ul ul{
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul{
+    background: #d5c9dd;
+    padding: 0 460; 
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+
+nav ul li {
+    float: left;
+}
+/*마우스 커서를 대면 색이 바뀜*/s
+    nav ul li:hover {   
+        background: #66648B;
+        
+    }
+    
+        nav ul li:hover a {
+            color: #fff;
+            z-index: 1;
+        }
+    
+    nav ul li a {
+        display: block; padding: 25px 40px;
+        color: rgb(53, 51, 83); text-decoration: none;
+        z-index: 1;
+    }
+        
+    
+nav ul ul {
+    background: #66648B; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+    z-index: 1;
+}
+    nav ul ul li {
+        float: none; 
+        border-bottom: 1px solid #66648B; position: relative;
+        z-index: 1;
+    }
+        nav ul ul li a {
+            padding: 15px 40px;
+            color: #fff;
+            z-index: 1;
+        }	
+            nav ul ul li a:hover {
+                background: rgb(64, 62, 95);
+                z-index: 1;
+            }
+    
+nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+.textarea{
+    background-color: rgba(184, 255, 194, 0.705);
+    border: none;
+    width: 1000px;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+.sly{
+    margin-left: auto; 
+    margin-right: auto;
+    width: 300px;
+    position: absolute;
+    bottom: -180px;
+}
+
+.Title{
+    font-weight: bold;
+    font-size: 70px;
+    color: rgb(39, 151, 99);
+    position: absolute;
+    bottom: -10px;
+    margin-left: 450px;
+}
+
+.type{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(201, 233, 200);
+    border-radius: 5px;
+}
+
+.code{
+    text-align: center;
+    color: rgb(161, 252, 196);
+    font-size: 32px;
+}
+
+.TT{
+    text-align: center;
+    color: rgb(125, 219, 125);
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.ss{
+    text-align: center;
+    color: rgb(217, 230, 243);
+    font-size: 17px;
+    font-style: normal;
+}
